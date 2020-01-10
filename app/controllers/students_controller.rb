@@ -11,8 +11,8 @@ class StudentsController < ApplicationController
     elsif self.active == true
       self.active = false
     end
-    
-    
+
+
   end
 
   def show
