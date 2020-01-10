@@ -1,13 +1,8 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: :show
-  before_action :init
 
   def index
     @students = Student.all
-  end
-
-  def init
-    self.active = false if self.active.nil?
   end
 
   def show
