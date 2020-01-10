@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
   def init
     self.active = false if self.active.nil?
   end
-  
+
   def show
     @student = Student.find(params[:id])
   end
